@@ -1,0 +1,45 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path" : "pages/DingDingH5/DingDingH5",
+			"style" : 
+			{
+				"navigationBarTitleText" : "钉钉H5微应用授权登录"
+			}
+		},
+		{
+			"path" : "pages/DingDingH5/DingDingH5",
+			"style" : 
+			{
+				"navigationBarTitleText" : "钉钉小程序免登"
+			}
+		},
+		{
+			"path" : "pages/WeChatH5/WeChatH5",
+			"style" : 
+			{
+				"navigationBarTitleText" : "微信H5免登"
+			}
+		},
+		{
+			"path" : "pages/WeChatMiniProgram/WeChatMiniProgram",
+			"style" : 
+			{
+				"navigationBarTitleText" : "微信小程序免登"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

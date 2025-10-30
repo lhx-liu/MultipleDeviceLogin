@@ -1,0 +1,23 @@
+{
+    "id": "phone-login",
+    "name": "微信小程序、钉钉小程序，微信(企微)H5、钉钉H5免登示例工程",
+    "displayName": "微信小程序、钉钉小程序，微信(企微)H5、钉钉H5免登示例工程",
+    "version": "1.0.0",
+    "description": "多端免登示例工程，可结合自己业务逻辑进行集成",
+    "keywords": [
+        "微信小程序",
+        "钉钉小程序",
+		"微信H5",
+		"钉钉H5微应用"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    },
+    "dependencies": {
+        "dingtalk-h5-remote-debug": "^0.1.3",
+        "dingtalk-jsapi": "^3.2.0"
+    }
+}
