@@ -1,11 +1,17 @@
 # MultipleDeviceLogin
 
-多端登录示例工程，包含多个平台的登录实现示例，适用于微信H5、钉钉小程序、钉钉H5等场景。
+多端登录示例工程，包含多个平台的登录实现示例，适用于微信（企微）H5、微信小程序、钉钉小程序、钉钉H5等场景。
+
+项目地址：[https://github.com/lhx-liu/MultipleDeviceLogin](https://github.com/lhx-liu/MultipleDeviceLogin)
 
 ## 项目结构
 - **pages/WeChatH5**
   - **WeChatH5.vue**: 微信（企微）H5授权登录示例页面。
   - **微信H5页面授权登录.md**: 微信（企微）H5授权登录的详细说明文档。
+
+- **pages/WeChatMiniProgram**
+  - **WeChatMiniProgram.vue**: 微信小程序手机号快捷登录示例页面。
+  - **微信H5页面授权登录.md**: 微信小程序手机号快捷登录的详细说明文档。
 
 - **pages/DingDingMiniProgram**
   - **DingDingMiniProgram.vue**: 钉钉小程序授权登录示例页面。
@@ -13,7 +19,7 @@
 
 - **pages/DingDingH5**
   - **DingDingH5.vue**: 钉钉H5微应用授权登录示例页面，包含免登和JSAPI鉴权。
-  - **getDingDingSign.py**: 钉钉H5签名计算脚本。
+  - **getDingDingSign.py**: 计算JSAPI签名脚本，方便调试。
   - **钉钉H5微应用授权登录.md**: 钉钉H5微应用授权登录的详细说明文档。
 
 ## 功能概览
@@ -21,14 +27,18 @@
    - 实现微信H5的静默授权和用户信息授权登录。
    - 支持授权回调处理和参数存储。
 
-2. **钉钉小程序授权登录**
+2. **微信小程序手机号快捷登录**
+   - 实现微信小程序的手机号快捷登录功能。
+   - 微信小程序手机号快捷登录，已封装成通用组件，可前往[uniapp插件市场](https://ext.dcloud.net.cn/plugin?id=19369)查看。
+
+3. **钉钉小程序授权登录**
    - 实现钉钉小程序的免登功能。
    - 支持获取`authCode`并进行后续业务处理。
 
-3. **钉钉H5微应用授权登录**
+4. **钉钉H5微应用授权登录**
    - 实现钉钉H5微应用的免登和JSAPI鉴权。
-   - 支持获取地理位置和选择聊天会话。
-   - 提供签名计算脚本`getDingDingSign.py`。
+   - 提供需要JSAPI鉴权的API示例，例如支持获取地理位置、选择聊天会话等。
+   - 提供签名计算脚本`getDingDingSign.py`，方便调试和计算签名参数。
 
 ## 使用说明
 - 根据各平台的需求，参考对应的`.md`文档进行集成。

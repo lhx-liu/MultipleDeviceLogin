@@ -131,7 +131,7 @@ def sign(jsticket, nonce_str, time_stamp, url):
         sha256.update(plain.encode('utf-8'))
         newJsticket = byte_to_hex(sha256.digest())
         print('生成票据时间戳=》' + time_stamp)
-        print('生成jsticket=》' + newJsticket)
+        print('生成sign=》' + newJsticket)
         print('生成签名成功，请将上述时间戳及签名放到前台dd.config中！')
         return byte_to_hex(sha256.digest())
     except Exception as error:

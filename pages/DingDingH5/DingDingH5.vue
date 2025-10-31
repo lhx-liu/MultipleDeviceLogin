@@ -49,6 +49,7 @@
 			/**
 			 * 钉钉H5微应用JSAPI鉴权示例
 			 * 针对当前单页面应用 只需鉴权一次即可
+			 * signature可通过getDingDingSign.py脚本计算得到
 			 */
 			ddconfig() {
 				uni.showToast({
